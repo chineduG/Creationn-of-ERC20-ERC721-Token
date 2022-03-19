@@ -1,0 +1,70 @@
+{
+	"id": "77c80c4ea7a07bd43379b0736d50ca73",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/4_NeduTokenERC721.sol": {
+				"content": "// // SPDX-License-Identifier: MIT\n// pragma solidity ^0.8.4;\n\n// import \"@openzeppelin/contracts/token/ERC721/ERC721.sol\";\n// import \"@openzeppelin/contracts/access/Ownable.sol\";\n// import \"@openzeppelin/contracts/utils/Counters.sol\";\n\n// contract NeduToken is ERC721, Ownable {\n//     using Counters for Counters.Counter;\n\n//     Counters.Counter private _tokenIdCounter;\n\n//     constructor() ERC721(\"Nedu\", \"NTK\") {}\n\n//     function safeMint(address to) public onlyOwner {\n//         uint256 tokenId = _tokenIdCounter.current();\n//         _tokenIdCounter.increment();\n//         _safeMint(to, tokenId);\n//     }\n// }\n\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"errors": [
+			{
+				"component": "general",
+				"errorCode": "3420",
+				"formattedMessage": "Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.7;\"\n--> contracts/4_NeduTokenERC721.sol\n\n",
+				"message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.7;\"",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "contracts/4_NeduTokenERC721.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"contracts/4_NeduTokenERC721.sol": {
+				"ast": {
+					"absolutePath": "contracts/4_NeduTokenERC721.sol",
+					"exportedSymbols": {},
+					"id": 1,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [],
+					"src": "624:0:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
